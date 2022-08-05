@@ -51,7 +51,7 @@ const Homepage = () => {
       setUsers(results)
     } catch (error) {
       console.log('error ', error)
-      setUsers({ loading: false } as any)
+      setUsers({ items: [], total_count: 0, loading: false })
     }
   }, [])
 
